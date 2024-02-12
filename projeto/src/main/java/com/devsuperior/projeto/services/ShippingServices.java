@@ -8,13 +8,13 @@ public class ShippingServices {
 
     public double shipment(Order order) {
 
-        if (order.getBasic() < 100) {
-            return order.getBasic() + 20;
+        if (order.getBasic() < 100.00) {
+            return 20.0;
         }
 
-        if (order.getBasic() >= 100 && order.getBasic() <= 200) {
+        if (order.getBasic() >= 100.00 && order.getBasic() <= 200.00) {
 
-            return order.getBasic() + 12;
+            return 12.0;
         }
 
         return order.getBasic();

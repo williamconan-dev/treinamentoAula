@@ -7,6 +7,11 @@ public class Order {
 
     private double discount;
 
+    public Order(int code, double basic, double discount) {
+        this.code = code;
+        this.basic = basic;
+        this.discount = discount;
+    }
 
     public double getDiscount() {
         return discount;
