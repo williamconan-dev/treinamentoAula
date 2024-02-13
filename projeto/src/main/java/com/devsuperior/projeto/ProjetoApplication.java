@@ -41,9 +41,11 @@ public class ProjetoApplication implements CommandLineRunner {
 		double valueDiscount = sc.nextDouble();
 
 		Order order = new Order(code,valueOrder,valueDiscount);
+		double total = orderService.total(order);
 
-		System.out.println("Pedido código:" + code);
-		System.out.println("Valor total: R$ " + orderService.total(order));
+		System.out.println("Pedido código " + code);
+		System.out.printf("Valor total: R$ %.2f %n", total);
+
 
 
 

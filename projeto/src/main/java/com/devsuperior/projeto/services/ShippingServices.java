@@ -17,6 +17,10 @@ public class ShippingServices {
             return 12.0;
         }
 
+        if (order.getBasic() > 200.00){
+            return 0;
+        }
+
         return order.getBasic();
     }
 
